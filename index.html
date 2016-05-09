@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicación 7</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2/style.css" media="screen" />
+	<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/2a.jpg','imagenes/11a.jpg','imagenes/12a.jpg')">
+<div data-role="page" id="principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+ <h1> Batalla del 5 de Mayo </h1>
+ </div>
+<div>
+<!-- Start WOWSlider.com BODY section id=wowslider-container1 -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="data1/images/v1.1.jpg" alt="v1.1" title="v1.1" id="wows1_0"/></li>
+<li><img src="data1/images/v1.2.jpg" alt="v1.2" title="v1.2" id="wows1_1"/></li>
+<li><img src="data1/images/v1.3.jpg" alt="v1.3" title="v1.3" id="wows1_2"/></li>
+<li><img src="data1/images/v1.4.jpg" alt="v1.4" title="v1.4" id="wows1_3"/></li>
+<li><img src="data1/images/v1.5.jpg" alt="v1.5" title="v1.5" id="wows1_4"/></li>
+<li><img src="data1/images/v1.6.jpg" alt="v1.6" title="v1.6" id="wows1_5"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="v1.1"><img src="data1/tooltips/v1.1.jpg" alt="v1.1"/>1</a>
+<a href="#" title="v1.2"><img src="data1/tooltips/v1.2.jpg" alt="v1.2"/>2</a>
+<a href="#" title="v1.3"><img src="data1/tooltips/v1.3.jpg" alt="v1.3"/>3</a>
+<a href="#" title="v1.4"><img src="data1/tooltips/v1.4.jpg" alt="v1.4"/>4</a>
+<a href="#" title="v1.5"><img src="data1/tooltips/v1.5.jpg" alt="v1.5"/>5</a>
+<a href="#" title="v1.6"><img src="data1/tooltips/v1.6.jpg" alt="v1.6"/>6</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Slideshow DHTML</a> by WOWSlider.com v4.8</span>
+	<a href="#" class="ws_frame"></a>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">    
+    <h2> Personajes principales </h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> Origen de la batalla </h2>
+    </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> Desarrollo de la batalla </h2>
+    </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> Conclusión </h2>
+    </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> Hoy en día </h2>
+   
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> 4 de Mayo </h2>
+   
+    </a>
+    </li>
+    </ul>
+    </div>
+    
+    
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+    <h4> Aplicación 7 </h4>
+    <h4>Daniel Alberto Calderón Pérez </h4>
+    </div>
+    </div>
+    </div> 
+    
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Personajes principales que participaron </h1>
+    </div>
+    <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+  <h1> Benito Juárez </h1>
+   <p>
+   Por no poder pagar sus deudas con Europa debido al precario erario público consecuencia de la guerra de reforma, el puerto de Veracruz fue invadido el 15 de diciembre de 1861 por una fuerza española de 6000 hombres que no encontró resistencia. El 9 de enero de 1862, se les unieron 3000 franceses y 800 ingleses.<br>
+
+Los invasores ingleses y españoles salieron del país, ya que los franceses sabotearon las pláticas para obtener el pago pacífico de las deudas. Napoleón III estaba buscando secretamente establecer un Imperio Mexicano.<br>
+
+El Papa Pío IX también apoyó la invasión de México. La iglesia católica estaba fuertemente disgustada con la aplicación de las Leyes de Reforma en México. La encíclica del Vaticano Quanta cura,20 incluía el Syllabus errorum que era un catálogo de infracciones a los presuntos derechos de la Iglesia en que incurrían, en Europa y en América, gobiernos de países antaño sometidos al dominio eclesiástico.<br>
+   </p>
+   <img src="imagenes/4.png" width="60%" height="65%">
+ </div>
+   
+    <div data-role="collapsible" data-content-theme="false">
+   <h1> Ignacio Zaragoza </h1>
+   <p>
+   Cuando las fuerzas francesas de Napoleón III invadieron México para imponer como emperador a Maximiliano de Habsburgo, Zaragoza, con el rango de general y al mando del Ejército de Oriente, las enfrentó en Acultzingo en la llamada Batalla de Las Cumbres, el 28 de abril de 1862, siendo obligado a retroceder. Zaragoza comprendió la posición defensiva y favorable que tenía la ciudad de Puebla, paso obligado para ir a la Ciudad de México.<br>
+
+Al amanecer del 5 de mayo de 1862, el Gral. Ignacio Zaragoza arenga a sus soldados: "Nuestros enemigos son los primeros soldados del mundo, pero vosotros sois los primeros hijos de México y os quieren arrebatar vuestra patria". Ordena a Miguel Negrete dirigir la defensa por la izquierda; a Felipe Berriozábal por la derecha y a Porfirio Díaz que esté junto a él. Tras varias horas de lucha, la batalla no se decide, se enfrentan cuerpo a cuerpo mexicanos y franceses, finalmente, los invasores se retiran mientras Zaragoza grita: "Tras ellos, a perseguirlos, el triunfo es nuestro".El ejército francés considerado el mejor del mundo en ese tiempo, un ejército profesional, con la fama de haber ganado batallas en Argelia (Legión Extranjera) y de haber entrado al río Mekong en la Indochina Francesa (hoy Vietnam), al mando del General Conde de Lorencez, era derrotado estrepitosamente.<br>
+   </p>
+   <img src="imagenes/3.png" width="60%" height="65%"> 
+   </div>
+   
+   <div data-role="collapsible" data-content-theme="false">
+  <h1> Porfirio Diaz </h1>
+   <p>
+   Benito Juárez ordenó a Ignacio Zaragoza, general mexicano que participó del lado liberal en la Guerra de Reforma, hacer frente a las fuerzas francesas en Puebla. El 5 de mayo, Díaz y otros militares intervinieron en la Batalla de Puebla, donde lograron derrotar a los franceses y hacerlos retroceder hasta Orizaba. Díaz defendió el ala izquierda de la ciudad, y rebatió en dos ocasiones el ataque francés. Una vez que huyeron, González Ortega y Porfirio Díaz se dieron a la tarea de perseguirlos, hasta que Zaragoza se los impidió. Ese mismo día, Juárez recibió una carta de Zaragoza mencionándole los detalles de la batalla, y haciendo hincapié en "el empeño y bizarría del ciudadano general don Porfirio Díaz".
+   </p>
+   <img src="imagenes/5.jpg" width="60%" height="65%">
+ </div>
+   
+    <div data-role="collapsible" data-content-theme="false">
+   <h1> Miguel Negrete </h1>
+   <p>
+   Durante la Segunda Intervención Francesa en México, Negrete hizo a un lado su ideología conservadora y participó en la defensa del territorio mexicano, ante el avance de las tropas francesas hacia el centro de México, Negrete reacciona y se pone de parte del bando liberal con su célebre frase "Yo tengo Patria antes que Partido".<br>
+
+Unido al ejército republicano y a las órdenes del general Ignacio Zaragoza, ambos se cubren de gloria en la Batalla de Las Cumbres y en la Batalla de Puebla el 5 de mayo de 1862, llegando a ser considerado como el segundo héroe de dicha batalla al defender el Fuerte de Loreto, al respecto Ernesto de la Torre comenta:<br>
+
+Negrete, con 1,200 soldados y dos baterías de campaña y montaña, defendía las alturas y fue quien llevó el peso de la batalla y a quien se debió el triunfo, auxiliado heroicamente por todos sus compañeros, dirigidos certeramente por el general Ignacio Zaragoza
+   </p>
+   <img src="imagenes/6.jpg" width="60%" height="65%"> 
+   </div>
+    </div>
+   
+    <div data-role="footer" data-theme="a" data-position="fixed" >
+     <div data-role="footer" align="center" data-theme="a">
+      <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4> Aplicación 7 </h4>
+    </div>
+    </div>
+    </div>
+    
+    
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Origen de la batalla </h1>
+    </div>
+     
+<div data-role="main" class="ui-content" align="center">
+   <p>
+   En octubre de 1861, Francia, Inglaterra y España suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México para reclamar sus derechos como acreedores por una deuda que ascendía a alrededor de 80 millones de pesos, aproximadamente eran 69 millones para los ingleses, 9 millones para los españoles y 2 millones para Francia.<br>
+	<img src="imagenes/1.jpg" width="30%" height="50%"><br>
+Poco después de reunirse, los representantes de los tres países enviaron un ultimátum al gobierno mexicano en el que pedían el pago de sus deudas; de lo contrario, invadirían el país. Juárez, quien gobernaba a un país que apenas empezaba a levantarse de la postración económica, respondió con un exhorto a lograr un arreglo amistoso, y los invitó a conferenciar. Acompañó ese mensaje con la derogación del decreto que suspendió los pagos. Al mismo tiempo, en vista de la posibilidad real de una invasión militar que buscara llegar hasta la Ciudad de México, ordenó el traslado de pertrechos y la fortificación de Puebla, así como crear una unidad, a la que se designó como Ejército de Oriente, que fue puesta bajo el mando del general José López Uraga. En vista del desempeño deficiente de este mando, fue destituido y en su lugar se designó a Zaragoza, quien dejó el Ministerio de Guerra y se dirigió a Puebla para organizar la oposición al avance francés con cerca de 10,000 hombres; cantidad mínima si se toma en cuenta el vasto territorio que debía cubrirse.
+   </p>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/2a.jpg',1)"><img src="imagenes/2.jpg" width="80%" height="45%" id="Image35"></a>
+<div data-role="footer" data-theme="a" data-position="fixed" >
+  <div data-role="footer" align="center" data-theme="a">
+      <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4> Aplicación 7 </h4>
+   </div>
+</div>
+    </div>
+</div>    
+    
+     
+    
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1> Desarrollo de la batalla </h1> 
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    <p>
+    
+El 2 de mayo parte el Ejército Expedicionario Francés desde San Agustín del Palmar en Veracruz con rumbo para cruzar la Sierra Madre Oriental y dirigirse hacia Puebla ya que era paso obligado para llegar a la capital del país.<br>
+Cabe señalar que el Partido Conservador apoyaba la Invasión francesa e incluso formaron parte de la guerrilla que atacó en varias ocasiones al Ejército de Oriente.<br>
+Otros generales mexicanos también participaron en la defensa de Puebla como es el caso de  las tropas de Oaxaca dirigidas por Porfirio Díaz. El centro de la línea lo defendió Francisco Lamadrid con las tropas del Estado de México y San Luis Potosí. La izquierda se apoyó en el cerro de Acueyametepec ubicado en el norte de la ciudad y en cuya cumbre se ubicaban los Fuertes de Loreto y Guadalupe, con el general Miguel Negrete a la cabeza de la Segunda División de Infantería.<br>
+El 5 de mayo a las 9:15am aparecen los franceses en el horizonte pero no es sino hasta las 11:15am cuando comienzan las hostilidades anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad.
+El conde de Lorencez ordena una maniobra sorpresiva que divide a la columna francesa en dos y que da como resultado a 4,000 hombres marchando para atacar los Fuertes de Loreto y Guadalupe. Esta decisión pudo ser la causa de la derrota francesa ya que los mexicanos contaban con la ventaja en estas posiciones.<br>
+ El 6o. Batallón de la Guardia Nacional del Estado de Puebla, bajo el mando del entonces coronel Juan Nepomuceno Méndez, fue el primer cuerpo del Ejército de Oriente en hacer frente a los franceses, al ubicarse en la línea comprendida entre los fuertes, y rechazar su ataque.
+Varios embates franceses fueron repelidos por la resistencia del Ejército Mexicano como es el caso de los zuavos, el regimiento de élite de la infantería francesa, quienes iniciaron un sigiloso ascenso hacia el Fuerte de Guadalupe pero fueron recibidos con bayonetas y obligados a retroceder.<br>
+El coronel mexicano José Rojo avisó a Antonio Álvarez que era tiempo de que la caballería mexicana entrara en acción para alcanzar una victoria completa. Ordenó a los Carabineros de Pachuca cargar sobre los restos de la columna, disparando sus carabinas y lanzando mandobles de sable sobre los franceses, siendo totalmente rechazados.<br>
+A las dos y media de la tarde, cuando los mexicanos empezaban a vislumbrar la victoria, Lorencez se dispuso a lanzar el último asalto, dirigiendo a los Cazadores de Vincennes y el Regimiento de Zuavos hacia Guadalupe. Zaragoza dispuso que el Batallón Reforma de San Luis Potosí saliera en auxilio de los fuertes.<br>
+Luego de ser repelidos por última vez, las fuerzas del Ejército Expedicionario Francés comenzaron a huir completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia Amozoc.
+    </p>
+ </div>
+  	<iframe width="80%" height="80%" src="https://www.youtube.com/embed/K8Qers2DQIQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div data-role="footer" data-theme="a" data-position="fixed" >
+     <div data-role="footer" align="center" data-theme="a">
+    <div>
+      <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4> Aplicación 7 </h4>
+   </div>
+    </div>
+    </div>
+    </div>
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Conclusión </h1> 
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    <p>
+    Mientras se libraba la batalla, en el Palacio Nacional y en la Ciudad de México en general se vivía un ambiente de tensa espera. Lo último que se sabía de Puebla era el telegrama enviado por Zaragoza hacia las 12:30 del día, en el que avisaba que el fuego de artillería de ambos lados había iniciado. Luego, silencio. Ante la incertidumbre, el gobierno había hecho salir precipitadamente al general Florencio Antillón al mando de los Batallones de Guanajuato, quedando como guardianes de la capital sólo 2,000 hombres del Regimiento de Coraceros Capitalinos y algunos centenares de milicianos pobremente armados. Si las tropas guanajuatenses se perdían, la capital quedaría desprotegida.<br>
+ <img src="imagenes/7.jpg" width="60%" height="65%"><br>
+A las 4:15 de la tarde finalmente se recibieron noticias:<br>
+
+... Sobre el campo a las dos y media.— Dos horas y media nos hemos batido. El enemigo ha arrojado multitud de granadas.— Sus columnas sobre el cerro de Loreto y Guadalupe han sido rechazadas y seguramente atacó con cuatro mil hombres. Todo su impulso fue sobre el cerro.— En este momento se retiran las columnas y nuestras fuerzas avanzan sobre ellas. Comienza un fuerte aguacero.— I. Zaragoza<br>
+Zaragoza envió más tarde otro telegrama en el que dijo que los franceses habían iniciado la retirada hacia Amozoc, pero sin mencionar el resultado final de la batalla. Finalmente, a las 5:49 de la tarde se recibió otro parte, dirigido al ministro de Guerra, que causó júbilo (y un gran alivio) en Palacio Nacional:<br>
+<img src="imagenes/8.jpg" width="60%" height="65%"><br>
+... Las armas del Supremo Gobierno se han cubierto de gloria: el enemigo ha hecho esfuerzos supremos por apoderarse del Cerro de Guadalupe, que atacó por el oriente de izquierda y derecha durante tres horas: fue rechazado tres veces en completa dispersión y en estos momentos está formado en batalla, fuerte de más de 4,000 hombres, frente al cerro de Guadalupe, fuera de tiro. No lo bato, como desearía, porque el Gobierno sabe (que) no tengo para ello fuerza bastante. Calculo la pérdida del enemigo, que llegó hasta los fosos de Guadalupe en su ataque, en 600 o 700 entre muertos y heridos; 400 habremos tenido nosotros. Sírvase vd. dar cuenta de este parte al C. Presidente.— I. Zaragoza<br>
+El saldo final de la batalla fue de 476 muertos y 345 heridos del lado francés, así como 83 muertos, cerca de 131 heridos y 12 desaparecidos para el Ejército de Oriente. A las 7 de la noche del día 6 de mayo arribaron a Puebla el general Antillón y sus tropas; Zaragoza esperaba un nuevo ataque de Lorencez, pero éste, el día 8 de mayo, dispuso la retirada hasta San Agustín del Palmar, siendo "saludado" por la artillería republicana y la Banda de Guerra de los Carabineros, quienes tocaron "Escape".<br>
+    </p>
+    </div>
+    <img src="imagenes/10.jpg" width="60%" height="65%">
+    </div>
+    <div data-role="footer" data-theme="a" data-position="fixed" >
+     <div data-role="footer" align="center" data-theme="a">
+    <div>
+      <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4> Aplicación 7 </h4>
+   </div>
+    </div>
+    </div>
+    </div>
+  
+    
+    
+    
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1> Hoy en día </h1> 
+    </div>
+    <div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+  <h1> ¿cómo se celebra? </h1>
+  <div>
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 -->
+	<div id="wowslider-container2">
+	<div class="ws_images"><ul>
+<li><img src="data2/images/v2.1.jpg" alt="v2.1" title="v2.1" id="wows2_0"/></li>
+<li><img src="data2/images/v2.2.jpg" alt="v2.2" title="v2.2" id="wows2_1"/></li>
+<li><img src="data2/images/v2.3.jpg" alt="v2.3" title="v2.3" id="wows2_2"/></li>
+<li><img src="data2/images/v2.4.jpg" alt="v2.4" title="v2.4" id="wows2_3"/></li>
+<li><img src="data2/images/v2.5.jpg" alt="v2.5" title="v2.5" id="wows2_4"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="v2.1"><img src="data2/tooltips/v2.1.jpg" alt="v2.1"/>1</a>
+<a href="#" title="v2.2"><img src="data2/tooltips/v2.2.jpg" alt="v2.2"/>2</a>
+<a href="#" title="v2.3"><img src="data2/tooltips/v2.3.jpg" alt="v2.3"/>3</a>
+<a href="#" title="v2.4"><img src="data2/tooltips/v2.4.jpg" alt="v2.4"/>4</a>
+<a href="#" title="v2.5"><img src="data2/tooltips/v2.5.jpg" alt="v2.5"/>5</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Slideshow DHTML</a> by WOWSlider.com v4.8</span>
+	<div id="wowslider-frame"></div>
+	<div id="wowslider-shadow"></div>
+	<a href="#" class="ws_frame"></a>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="engine2/wowslider.js"></script>
+	<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<div>
+  <p>
+  Aunque el 9 de mayo de 1862, el Presidente Benito Juárez declaró que el aniversario de la Batalla de Puebla día de fiesta nacional, la celebración mexicana queda pálida en comparación con la que se realiza en los Estados Unidos, donde ha adquirido una gran importancia comercial. El festejo típicamente donde se resalta la cultura, música, bailas y los encuentros familiares, tambien es aprovechado por restaurantes y bares para vender cervezas y la rica y muy variada comida mexicana.<br>
+
+Por este o cualquier motivo, celebremos a México, a su gente y a su cultura. Este día no te olvides de probar el rico pollo pueblano, te lo recomendamos. ¡Viva México!
+  </p>
+ </div>
+ </div>
+ 
+    <div data-role="collapsible" data-content-theme="false">
+   <h1> Lugares de la batalla </h1>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image39','','imagenes/11a.jpg',1)"><img src="imagenes/11.jpg" width="80%" height="65%" id="Image39"></a> <br>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image40','','imagenes/12a.jpg',1)"><img src="imagenes/12.jpg" width="80%" height="65%" id="Image40"></a>
+    </div> 
+
+    </div>
+
+   <div data-role="footer" data-theme="a" data-position="fixed" align="center">
+    <img src="res/android/mdpi.png" width="46" height="46">
+
+    <h4> Aplicación 7 </h4>
+	</div>
+   </div>
+	</div>
+
+      <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1> 4 de Mayo </h1> 
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    <p>
+    La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.<br>
+
+Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla.
+    </p>
+    <img src="imagenes/13.jpg" width="60%" height="40%" >
+    </div>
+   </div> 
+   <div data-role="footer" data-theme="a" data-position="fixed" align="center">
+    <img src="res/android/mdpi.png" width="46" height="46">
+    <h4> Aplicación 7 </h4>
+   </div>
+</div>
+</div>
+</body>
+</html>
